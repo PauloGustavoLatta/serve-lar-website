@@ -1,13 +1,30 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeTesteComponent } from './home-teste/home-teste.component';
+
+import { ContactComponent } from './pages/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NgModule } from '@angular/core';
+import { ServicesComponent } from './pages/services/services.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeTesteComponent,
+    component: HomeComponent,
     data: {
-      title: 'SisWeb',
+      title: 'Início',
+    },
+  },
+  {
+    path: 'servicos',
+    component: ServicesComponent,
+    data: {
+      title: 'Serviços',
+    },
+  },
+  {
+    path: 'contato',
+    component: ContactComponent,
+    data: {
+      title: 'Contato',
     },
   },
 ];
