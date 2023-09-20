@@ -18,6 +18,7 @@ import { NgModule } from '@angular/core';
 import { ServicesComponent } from './pages/services/services.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { LocationComponent } from './pages/location/location.component';
+import { IconComponent } from './components/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { LocationComponent } from './pages/location/location.component';
     ContactComponent,
     GalleryComponent,
     LocationComponent,
+    IconComponent,
   ],
   imports: [
     BrowserModule,
