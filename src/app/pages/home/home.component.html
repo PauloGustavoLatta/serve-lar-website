@@ -18,11 +18,21 @@
       {{ name }}
     </p>
     <div class="d-flex justify-content-center mt-2">
+      <div class="mt-2 d-flex align-items-center">
+        <app-icon name="iconWhats" [icon]="iconWhatsApp"></app-icon>
+        <span style="margin-left: 5px;">
+          (48)9 9629-0394
+        </span>
+      </div>
+
       <button mat-icon-button (click)="goTo('mailto:damacenosc@gmail.com')">
         <app-icon name="iconEmail" [icon]="iconEmail"></app-icon>
       </button>
 
-      <button mat-icon-button (click)="goTo('https://www.instagram.com/damacenocarlos/')">
+      <button
+        mat-icon-button
+        (click)="goTo('https://www.instagram.com/damacenocarlos/')"
+      >
         <app-icon name="iconInstagram" [icon]="iconInstagram"></app-icon>
       </button>
     </div>
