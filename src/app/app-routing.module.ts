@@ -16,13 +16,6 @@ const routes: Routes = [
     },
   },
   {
-    path: 'services',
-    component: ServicesComponent,
-    data: {
-      title: 'Serviços',
-    },
-  },
-  {
     path: 'gallery',
     component: GalleryComponent,
     data: {

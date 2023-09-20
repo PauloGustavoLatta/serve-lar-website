@@ -19,6 +19,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { LocationComponent } from './pages/location/location.component';
 import { IconComponent } from './components/icon/icon.component';
+import { CardServicesComponent } from './components/card-services/card-services.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { IconComponent } from './components/icon/icon.component';
     GalleryComponent,
     LocationComponent,
     IconComponent,
+    CardServicesComponent,
   ],
   imports: [
     BrowserModule,
