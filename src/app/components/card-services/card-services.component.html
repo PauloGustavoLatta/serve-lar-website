@@ -1,0 +1,11 @@
+<mat-card class="body-card mb-4">
+  <mat-card-header>
+    <mat-card-title style="font-size: 18px;"> {{ card.title }}</mat-card-title>
+  </mat-card-header>
+  <img class="image" mat-card-image [src]="card.src" alt="Photo">
+  <mat-card-content>
+    <p class="pt-2" style="font-size: 14px;">
+      {{ card.description }}
+    </p>
+  </mat-card-content>
+</mat-card>

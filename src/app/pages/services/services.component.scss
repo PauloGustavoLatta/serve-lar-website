@@ -1,0 +1,17 @@
+.icon-display {
+  transform: scale(1.6);
+  margin-left: 15px;
+}
+
+.label {
+  margin-left: 14px;
+  letter-spacing: 0.00938em;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+@media (max-width: 575px) {
+  .title {
+    margin-top: 30% !important;
+  }
+}

@@ -1,1 +1,14 @@
-<p>services works!</p>
+<div class="container-principal h-100 m-5">
+  <div class="pt-5 m-5 title">
+    <mat-icon class="icon-display"> person </mat-icon>
+    <span class="label"> Serviços </span>
+  </div>
+
+  <div class="d-flex justify-content-around flex-wrap align-items-center m-5">
+    <ng-container *ngFor="let item of items">
+      <div class="col-sm-4">
+        <app-card-services [card]="item"></app-card-services>
+      </div>
+    </ng-container>
+  </div>
+</div>
