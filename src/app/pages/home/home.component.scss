@@ -1,0 +1,32 @@
+.area-perfil {
+  width: 400px;
+
+  .image-perfil {
+    border-radius: 50%;
+  }
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.fontawesomesvg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+@media (max-width: 575px) {
+  .text {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2em;
+  }
+}
