@@ -1,5 +1,33 @@
-<app-header></app-header>
-<app-menu-header></app-menu-header>
+<p style="margin: 0">
+  <mat-toolbar color="var(--black)">
+    <button mat-icon-button (click)="drawer.toggle()" class="navbtn">
+      <mat-icon>menu</mat-icon>
+    </button>
 
+    <button mat-icon-button class="toHideOnMedia" (click)="goTo('')">
+      <mat-icon>home</mat-icon>
+    </button>
+    <span class="spacer"></span>
 
-<router-outlet></router-outlet>
+    <div class="toHideOnMedia">
+      <button mat-button (click)="goTo('')">Ínicio</button>
+      <button mat-button (click)="goTo('services')">Serviços</button>
+      <button mat-button (click)="goTo('gallery')">Galeria</button>
+      <button mat-button (click)="goTo('location')">Localização</button>
+      <button mat-button (click)="goTo('contact')">Contato</button>
+    </div>
+  </mat-toolbar>
+</p>
+
+<mat-drawer-container class="container-auto" autosize>
+  <mat-drawer #drawer class="sidenav" mode="over">
+    <mat-nav-list>
+      <a mat-list-item (click)="goTo(''); drawer.toggle()"> Ínicio </a>
+      <a mat-list-item (click)="goTo('services'); drawer.toggle()"> Serviços </a>
+      <a mat-list-item (click)="goTo('gallery'); drawer.toggle()"> Galeria </a>
+      <a mat-list-item (click)="goTo('location'); drawer.toggle()"> Localização </a>
+      <a mat-list-item (click)="goTo('contact'); drawer.toggle()">Contato </a>
+    </mat-nav-list>
+  </mat-drawer>
+  <router-outlet></router-outlet>
+</mat-drawer-container>
