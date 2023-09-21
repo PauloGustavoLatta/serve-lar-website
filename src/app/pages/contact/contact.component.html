@@ -1,1 +1,51 @@
-<p>contact works!</p>
+<div class="area-contact pt-5">
+  <div>
+    <mat-icon class="icon-display"> {{ icon }} </mat-icon>
+    <span class="label"> {{ title }} </span>
+  </div>
+
+  <div class="form row mt-4">
+    <span class="info-form mt-4">
+      Por favor, envie uma mensagem abaixo e entrarei em contato com você em
+      breve!
+    </span>
+
+    <form [formGroup]="form" class="mt-4 example-form" (ngSubmit)="sendEmail($event)">
+      <mat-form-field class="campo-form">
+        <mat-label>
+          <mat-icon class="icon-person"> person </mat-icon>
+          <span class="span-title">Nome</span>
+        </mat-label>
+
+        <input matInput formControlName="name" />
+      </mat-form-field>
+
+      <mat-form-field class="campo-form">
+        <mat-label class="span-title">
+          <mat-icon class="icon-email"> email </mat-icon>
+          Email
+        </mat-label>
+        <input type="email" matInput formControlName="email" />
+      </mat-form-field>
+
+      <mat-form-field class="campo-form">
+        <mat-label class="span-title">Mensagem</mat-label>
+        <textarea
+          class="textarea"
+          matInput
+          formControlName="message"
+        ></textarea>
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        class="mb-4"
+        [disabled]="form.invalid"
+      >
+        Enviar
+        <mat-icon>send</mat-icon>
+      </button>
+    </form>
+  </div>
+</div>

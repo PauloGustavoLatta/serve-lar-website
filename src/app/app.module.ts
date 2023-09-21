@@ -13,7 +13,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { IconComponent } from './components/icon/icon.component';
 import { LocationComponent } from './pages/location/location.component';
 import { MatButtonModule } from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -27,12 +27,11 @@ import { ServicesComponent } from './pages/services/services.component';
     AppComponent,
     HomeComponent,
     ServicesComponent,
-    ContactComponent,
     LocationComponent,
     IconComponent,
     CardServicesComponent,
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -48,9 +47,10 @@ import { ServicesComponent } from './pages/services/services.component';
     FormsModule,
     ReactiveFormsModule,
     GalleryModule,
-    GalleryComponent
+    GalleryComponent,
+    ContactComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
