@@ -1,3 +1,9 @@
+.element {
+  cursor: pointer;
+  height: 44px;
+  margin-left: 20px;
+}
+
 .spacer {
   flex: 1 1 auto;
 }
@@ -41,6 +47,9 @@ li {
     height: calc(100vh - 56px);
   }
   .toHideOnMedia {
+    display: none;
+  }
+  .element {
     display: none;
   }
 }
