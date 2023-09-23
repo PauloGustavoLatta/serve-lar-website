@@ -4,18 +4,21 @@
       <mat-icon>menu</mat-icon>
     </button>
 
-    <button mat-icon-button class="toHideOnMedia" (click)="goTo('')">
-      <mat-icon>home</mat-icon>
-    </button>
+    <img
+      class="element"
+      (click)="goTo('')"
+      src="../assets/images/logo.png"
+      alt="logo"
+    />
     <span class="spacer"></span>
 
     <div class="toHideOnMedia">
       <button mat-button (click)="goTo('')">Ínicio</button>
       <button mat-button (click)="goTo('contact')">Contato</button>
-      <button mat-icon-button class="toHideOnMedia" (click)="gotToWhatsApp()">
-        <app-icon name="iconWhats" [icon]="iconWhatsApp"></app-icon>
-      </button>
     </div>
+    <button mat-icon-button (click)="gotToWhatsApp()">
+      <app-icon name="iconWhats" [icon]="iconWhatsApp"></app-icon>
+    </button>
   </mat-toolbar>
 </p>
 
