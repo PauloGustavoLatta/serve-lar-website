@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +7,16 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
+  desktop: boolean = true;
+
+  ngAfterViewInit(): void {
+    if (window.innerWidth < 575) {
+      this.desktop = false;
+    }
+  }
+
+  serveLar: string = 'Somos a Serve Lar, a solução da sua casa ou empresa'
   name: string = 'Carlos Damaceno';
   description: string =
     'Texto exemplo: A Serve lar é um empresa que preza pelo seu tempo e bem estar. Enviamos apenas um profissional treinado para lhe atender nos serviços de Elétrica, Hidráulica Marcenaria, Pequenos Reparos e Instalações Diversas. Desse modo você não enche sua casa com vários profissionais que dificilmente você conseguiria agendar todos para um único dia. Com apenas um profissional você pode cobrar um bom serviço, pois é ele que fará tudo.';

@@ -1,5 +1,27 @@
 <div
-  class="container-principal d-flex flex-row justify-content-around flex-wrap align-items-center h-100 m-5"
+  class="area-imagem-principal"
+>
+  <img
+    *ngIf="desktop === true"
+    src="../../../assets/images/image-home.jpg"
+    class="imagem-principal"
+    alt="Imagem inicial"
+  />
+
+  <img
+    *ngIf="desktop === false"
+    src="../../../assets/images/image-home-celular.jpg"
+    class="imagem-principal"
+    alt="Imagem inicial"
+  />
+
+  <div class="title">
+    <span class="text">SOLUÇÕES EM <br> ELÉTRICA E HIDRÁULICA</span>
+  </div>
+</div>
+
+<div
+  class="container-principal h-100 m-5"
   style="max-height: -webkit-fill-available"
 >
   <div class="p-2 text-center area-perfil col-sm-6">
@@ -11,6 +33,9 @@
   </div>
 
   <div class="col-sm-6 text-center mt-4">
+    <p class="serveLar">
+      {{ serveLar }}
+    </p>
     <p class="text">
       {{ description }}
     </p>
