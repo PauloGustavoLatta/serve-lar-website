@@ -10,8 +10,18 @@
   font-weight: 700;
 }
 
+.galleria {
+  max-width: '640px';
+  margin: 'auto';
+  margin-top: '2em' ;
+}
+
 @media (max-width: 575px) {
   .title {
     margin-top: 100% !important;
+  }
+
+  .image {
+    max-width: 410px;
   }
 }

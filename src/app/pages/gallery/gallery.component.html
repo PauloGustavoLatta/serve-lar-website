@@ -16,7 +16,7 @@
     [containerStyle]="{ 'max-width': '640px', 'margin': 'auto', 'margin-top': '2em' }"
   >
     <ng-template pTemplate="item" let-item>
-      <img [src]="item.itemImageSrc" style="display: block;" />
+      <img class="image" [src]="item.itemImageSrc" style="display: block;" />
     </ng-template>
     <ng-template pTemplate="thumbnail" let-item>
       <div class="grid grid-nogutter justify-content-center">

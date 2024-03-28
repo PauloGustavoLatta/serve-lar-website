@@ -60,6 +60,11 @@
   vertical-align: -0.125em;
 }
 
+.area-galleria {
+  background-color: #F7F7F7;
+  padding-bottom: 20px;
+}
+
 @media (max-width: 575px) {
   .text {
     font-size: 1em;
@@ -76,17 +81,15 @@
   }
 
   .serveLar {
-    margin-top: 80%;
+    margin-top: 100%;
     font-size: 18px;
   }
 
   .image-perfil {
     margin-top: 30px;
   }
-}
 
-.area-galleria {
-  background-color: #F7F7F7;
-  border-top: solid 1px #CDC9C9;
-  padding-bottom: 20px;
+  .area-galleria {
+    margin-top: 100% !important;
+  }
 }
