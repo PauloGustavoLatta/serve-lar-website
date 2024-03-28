@@ -1,38 +1,57 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { Gallery, GalleryItem, GalleryModule, ImageItem } from 'ng-gallery';
+import { Component, OnInit } from '@angular/core';
 
+import { GalleriaModule } from 'primeng/galleria';
+import { GalleryModule } from 'ng-gallery';
 import { MatIconModule } from '@angular/material/icon';
+import { Photoservice } from '../../services/photoservice.service'
 
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss'],
   standalone: true,
-  imports: [GalleryModule, MatIconModule],
+  imports: [GalleryModule, MatIconModule, GalleriaModule],
 })
 export class GalleryComponent implements OnInit {
-  items = [
-    'caixa.webp',
-    'aterramento.webp',
-    'encanamento.webp',
-    'geral.webp',
-    'imagem-carlos.webp',
-    'painel.webp',
-    'serve-lar.webp',
-    'Joape-6-litros.jpg',
-    'Manutencao-preventiva-eletrica.jpg',
+  images: any[] | undefined;
+
+  positionOptions = [
+      {
+          label: 'Bottom',
+          value: 'bottom'
+      },
+      {
+          label: 'Top',
+          value: 'top'
+      },
+      {
+          label: 'Left',
+          value: 'left'
+      },
+      {
+          label: 'Right',
+          value: 'right'
+      }
   ];
 
-  constructor(private gallery: Gallery) {}
+  responsiveOptions: any[] = [
+      {
+          breakpoint: '1024px',
+          numVisible: 5
+      },
+      {
+          breakpoint: '768px',
+          numVisible: 3
+      },
+      {
+          breakpoint: '560px',
+          numVisible: 1
+      }
+  ];
+
+  constructor(private photoService: Photoservice) {}
 
   ngOnInit() {
-    const galleryRef = this.gallery.ref('myGallery');
-
-    for (let item of this.items) {
-      galleryRef.addImage({
-        src: `./assets/images/${item}`,
-        thumb: `./assets/images/${item}`,
-      });
-    }
+      this.photoService.getImages().then((images) => (this.images = images));
   }
 }

@@ -15,28 +15,28 @@ export class ServicesComponent {
         'Instalação autorizada e especializada do climatizador da Joape.',
     },
     {
-      src: '../../../assets/images/painel.webp',
+      src: '../../../assets/images/painel.jpg',
       title: 'Reparo de painel elétrico',
       description: 'Experiência na montagem de cada tipo de painéis elétricos.',
     },
     {
-      src: '../../../assets/images/caixa.webp',
+      src: '../../../assets/images/caixa.jpg',
       title: 'Instalação de interruptores',
       description: 'Experiência na montagem de tomadas e interruptores.',
     },
     {
-      src: '../../../assets/images/aterramento.webp',
+      src: '../../../assets/images/aterramento.jpg',
       title: 'Instalação de aterramento',
       description: 'Experiência na instalação e manutenção de aterramento.',
     },
     {
-      src: '../../../assets/images/geral.webp',
+      src: '../../../assets/images/geral.jpg',
       title: 'Serviços elétricos gerais',
       description:
         'Instalações elétricas, manutenção, reparo, restauração e troca.',
     },
     {
-      src: '../../../assets/images/encanamento.webp',
+      src: '../../../assets/images/encanamento.jpg',
       title: 'Encanador',
       description: 'Experiência em todo tipo de serviço de encanamento.',
     },

@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { CardServicesComponent } from './components/card-services/card-services.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { GalleriaModule } from 'primeng/galleria';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { GalleryModule } from 'ng-gallery';
 import { HomeComponent } from './pages/home/home.component';
@@ -49,6 +50,7 @@ import { ServicesComponent } from './pages/services/services.component';
     GalleryModule,
     GalleryComponent,
     ContactComponent,
+    GalleriaModule
   ],
   providers: [],
   bootstrap: [AppComponent],

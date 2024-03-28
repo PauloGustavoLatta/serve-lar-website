@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { PrimeNGConfig } from 'primeng/api';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'serve-lar-website';
   message: string = 'Olá, gostaria de solicitar um serviço.';
 
@@ -16,7 +18,11 @@ export class AppComponent {
     </svg>
   `;
 
-  constructor(public router: Router) {}
+  constructor(public router: Router, private primengConfig: PrimeNGConfig) {}
+
+  ngOnInit() {
+    this.primengConfig.ripple = true;
+  }
 
   goTo(url: string = ''): void {
     this.router.navigate([url]);
