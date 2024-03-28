@@ -19,7 +19,7 @@ export class HomeComponent implements AfterViewInit {
   serveLar: string = 'Somos a Serve Lar, a solução da sua casa ou empresa'
   name: string = 'Carlos Damaceno';
   description: string =
-    'Texto exemplo: A Serve lar é um empresa que preza pelo seu tempo e bem estar. Enviamos apenas um profissional treinado para lhe atender nos serviços de Elétrica, Hidráulica Marcenaria, Pequenos Reparos e Instalações Diversas. Desse modo você não enche sua casa com vários profissionais que dificilmente você conseguiria agendar todos para um único dia. Com apenas um profissional você pode cobrar um bom serviço, pois é ele que fará tudo.';
+    'A Serve lar se destaca como uma empresa comprometida com a otimização do seu tempo e o seu conforto. Priorizamos a qualidade do serviço ao enviar um único profissional, devidamente treinado, para atender às suas necessidades em áreas como Elétrica, Hidráulica, Marcenaria, Pequenos Reparos e Instalações Diversas. Essa abordagem permite evitar o incômodo de lidar com múltiplos profissionais, cuja coordenação de agendas poderia ser desafiadora. Com um único especialista dedicado, você pode confiar na entrega de um serviço de excelência, pois ele será responsável por todas as etapas necessárias.';
 
   iconEmail: string = `
     <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 22 22" width="22px">
