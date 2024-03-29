@@ -7,10 +7,27 @@ import { cardService } from 'src/app/services/card-services.service';
   styleUrls: ['./services.component.scss'],
 })
 export class ServicesComponent {
+  responsiveOptions: any[] | undefined = [
+    {
+        breakpoint: '1199px',
+        numVisible: 1,
+        numScroll: 1
+    },
+    {
+        breakpoint: '991px',
+        numVisible: 2,
+        numScroll: 1
+    },
+    {
+        breakpoint: '767px',
+        numVisible: 1,
+        numScroll: 1
+    }
+];
   items: cardService[] = [
     {
       src: '../../../assets/images/Joape-6-litros.jpg',
-      title: 'Instalação de climatizador Joape',
+      title: 'Climatizador Joape',
       description:
         'Instalação autorizada e especializada do climatizador da Joape.',
     },
@@ -21,12 +38,12 @@ export class ServicesComponent {
     },
     {
       src: '../../../assets/images/caixa.jpg',
-      title: 'Instalação de interruptores',
+      title: 'Interruptores',
       description: 'Experiência na montagem de tomadas e interruptores.',
     },
     {
       src: '../../../assets/images/aterramento.jpg',
-      title: 'Instalação de aterramento',
+      title: 'Aterramento',
       description: 'Experiência na instalação e manutenção de aterramento.',
     },
     {

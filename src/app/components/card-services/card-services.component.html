@@ -1,11 +1,11 @@
-<mat-card class="body-card mb-4">
-  <mat-card-header>
-    <mat-card-title style="font-size: 18px;"> {{ card.title }}</mat-card-title>
-  </mat-card-header>
-  <img class="image" mat-card-image [src]="card.src" alt="Photo">
-  <mat-card-content>
-    <p class="pt-2" style="font-size: 14px;">
-      {{ card.description }}
-    </p>
-  </mat-card-content>
-</mat-card>
+<p-card class="card" [header]="card.title">
+  <ng-template pTemplate="header">
+      <img alt="Card" [src]="card.src" />
+  </ng-template>
+  <p>
+    {{ card.description }}
+  </p>
+  <ng-template pTemplate="footer">
+    <p-button label="Solicitar serviço" (onClick)="solicitar(card.title)" icon="pi pi-check"></p-button>
+  </ng-template>
+</p-card>

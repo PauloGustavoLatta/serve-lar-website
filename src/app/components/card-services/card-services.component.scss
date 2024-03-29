@@ -12,3 +12,13 @@
   max-height: 340px;
   height: 100%;
 }
+
+.card {
+  width: '240px';
+}
+
+@media (max-width: 575px) {
+  .card {
+    width: '160px';
+  }
+}

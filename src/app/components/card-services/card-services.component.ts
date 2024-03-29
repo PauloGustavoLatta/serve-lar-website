@@ -13,4 +13,13 @@ export class CardServicesComponent {
     title: '',
     description: ''
   };
+
+  constructor() {}
+
+  solicitar(tipo: string): void {
+    window.open(
+      `https://api.whatsapp.com/send?phone=5548996290394&text=Olá, gostaria de solicitar um ${tipo}`,
+      '_blank'
+    );
+  }
 }

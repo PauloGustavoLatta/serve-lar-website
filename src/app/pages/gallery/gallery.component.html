@@ -3,25 +3,26 @@
     <mat-icon class="icon-display"> photo </mat-icon>
     <span class="label"> Galeria </span>
   </div>
+
+  <div class="area-galleria">
+    <p-galleria
+      [value]="images"
+      [showItemNavigators]="true"
+      [showThumbnails]="false"
+      [showIndicators]="true"
+      [showIndicatorsOnItem]="true"
+      [responsiveOptions]="responsiveOptions"
+      [containerStyle]="{ 'max-width': '640px', 'margin': 'auto', 'margin-top': '2em' }"
+    >
+      <ng-template pTemplate="item" let-item>
+        <img class="image" [src]="item.itemImageSrc" style="display: block;" />
+      </ng-template>
+      <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+          <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+      </ng-template>
+    </p-galleria>
+  </div>
 </div>
 
-<div class="area-galleria">
-  <p-galleria
-    [value]="images"
-    [showItemNavigators]="true"
-    [showThumbnails]="false"
-    [showIndicators]="true"
-    [showIndicatorsOnItem]="true"
-    [responsiveOptions]="responsiveOptions"
-    [containerStyle]="{ 'max-width': '640px', 'margin': 'auto', 'margin-top': '2em' }"
-  >
-    <ng-template pTemplate="item" let-item>
-      <img class="image" [src]="item.itemImageSrc" style="display: block;" />
-    </ng-template>
-    <ng-template pTemplate="thumbnail" let-item>
-      <div class="grid grid-nogutter justify-content-center">
-        <img [src]="item.thumbnailImageSrc" style="display: block;" />
-      </div>
-    </ng-template>
-  </p-galleria>
-</div>

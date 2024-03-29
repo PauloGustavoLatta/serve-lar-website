@@ -5,7 +5,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 import { CardServicesComponent } from './components/card-services/card-services.component';
+import { CarouselModule } from 'primeng/carousel';
 import { ContactComponent } from './pages/contact/contact.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { GalleryComponent } from './pages/gallery/gallery.component';
@@ -50,7 +53,10 @@ import { ServicesComponent } from './pages/services/services.component';
     GalleryModule,
     GalleryComponent,
     ContactComponent,
-    GalleriaModule
+    GalleriaModule,
+    CardModule,
+    ButtonModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],
