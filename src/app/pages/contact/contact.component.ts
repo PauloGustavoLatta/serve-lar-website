@@ -14,6 +14,7 @@ import {
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 import { Component } from '@angular/core';
+import { FooterComponent } from 'src/app/components/footer/footer.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
@@ -36,6 +37,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatSelectModule,
     MatButtonModule,
     MatSnackBarModule,
+    FooterComponent
   ],
 })
 export class ContactComponent {

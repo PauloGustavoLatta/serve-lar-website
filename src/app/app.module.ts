@@ -10,6 +10,7 @@ import { CardModule } from 'primeng/card';
 import { CardServicesComponent } from './components/card-services/card-services.component';
 import { CarouselModule } from 'primeng/carousel';
 import { ContactComponent } from './pages/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { GalleryModule } from 'ng-gallery';
@@ -56,7 +57,8 @@ import { ServicesComponent } from './pages/services/services.component';
     GalleriaModule,
     CardModule,
     ButtonModule,
-    CarouselModule
+    CarouselModule,
+    FooterComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
