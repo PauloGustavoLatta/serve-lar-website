@@ -1,0 +1,19 @@
+.about {
+  display: flex;
+
+  .lampada {
+    width: 600px;
+    height: 550px;
+    border-radius: 10px;
+  }
+
+  .area-texto {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
