@@ -54,7 +54,7 @@ export class ServicesComponent {
     },
     {
       src: '../../../assets/images/encanamento.jpg',
-      title: 'Encanador',
+      title: 'Encanamento',
       description: 'Experiência em todo tipo de serviço de encanamento.',
     },
   ];
