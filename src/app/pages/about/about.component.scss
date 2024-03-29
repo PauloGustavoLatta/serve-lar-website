@@ -8,12 +8,42 @@
   }
 
   .area-texto {
-    width: 100%;
+    width: 80%;
     padding: 20px;
     text-align: center;
   }
 
   .title {
     font-size: 36px;
+    color: #CB382A;
   }
+
+  p {
+    margin:  25px 50px;
+    font-size: 20px;
+    color: #003662;
+  }
+}
+
+@media (max-width: 575px) {
+  .about {
+    margin: 15px !important;
+    flex-direction: column-reverse;
+
+    .lampada {
+      display: none;
+    }
+
+    .area-texto {
+      width: 100% !important;
+    }
+
+    p {
+      margin: 25px 0 !important;
+      font-size: 18px !important;
+    }
+  }
+
+
+
 }
